@@ -138,8 +138,7 @@ export function injectPositive(values: number[]): number[] {
             (curSum: number, num: number) => (curSum += num),
             0
         );
-        const allPos = [...values];
-        allPos.push(sum);
+        const allPos = [...values, sum];
         return allPos;
     } else {
         const removeAfterNeg = values.map((element: number): number =>
