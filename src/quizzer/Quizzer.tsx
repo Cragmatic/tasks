@@ -1,4 +1,5 @@
 import React from "react";
+import sketch from "./assets/sketch-compressed.png";
 
 export function Quizzer(): JSX.Element {
     return (
@@ -7,11 +8,7 @@ export function Quizzer(): JSX.Element {
             <div>
                 <span>Sub-Task 1, sketch</span>
             </div>
-            <img
-                src="https://i.imgur.com/Mv9xXLo.jpeg"
-                alt="A sketch of the Quizzer application"
-                width="750px"
-            ></img>
+            <img src={sketch} alt="A sketch of the Quizzer application" />
         </div>
     );
 }
