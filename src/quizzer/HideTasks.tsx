@@ -14,7 +14,6 @@ import { GiveAttempts } from "../form-components/GiveAttempts";
 import { EditMode } from "../form-components/EditMode";
 import { MultipleChoiceQuestion } from "../form-components/MultipleChoiceQuestion";
 import { ChangeColor } from "../form-components/ChangeColor";
-import { Quizzer } from "../quizzer/Quizzer";
 import { Button } from "react-bootstrap";
 
 export function HideTasks(): JSX.Element {
@@ -28,7 +27,6 @@ export function HideTasks(): JSX.Element {
                             Hello World! - Welcome to UD CISC275 with React
                             TypeScript (ft Craig)
                         </header>
-                        <Quizzer></Quizzer>
                         <hr></hr>
 
                         <CheckAnswer expectedAnswer="42"></CheckAnswer>
