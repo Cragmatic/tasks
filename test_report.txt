@@ -32,18 +32,91 @@ FAIL src/App.test.tsx
       [36m<div>[39m
         [36m<div>[39m
           [36m<div>[39m
-            [36m<h3>[39m
-              [0mQuizzer[0m
-            [36m</h3>[39m
             [36m<div>[39m
-              [36m<span>[39m
-                [0mSub-Task 1, sketch[0m
-              [36m</span>[39m
+              [36m<h3>[39m
+                [0mQuizzer[0m
+              [36m</h3>[39m
+              [36m<div>[39m
+                [36m<span>[39m
+                  [0mSub-Task 1, sketch[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<img[39m
+                [33malt[39m=[32m"A sketch of the Quizzer application"[39m
+                [33msrc[39m=[32m"sketch-compressed.png"[39m
+              [36m/>[39m
             [36m</div>[39m
-            [36m<img[39m
-              [33malt[39m=[32m"A sketch of the Quizzer application"[39m
-              [33msrc[39m=[32m"sketch-compressed.png"[39m
-            [36m/>[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mfor[39m=[32m"quizList"[39m
+                [36m>[39m
+                  [0mQuizzes: [0m
+                [36m</label>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"form-select"[39m
+                  [33mid[39m=[32m"quizList"[39m
+                [36m>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"0"[39m
+                  [36m>[39m
+                    [0mQuiz1[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"1"[39m
+                  [36m>[39m
+                    [0mQuiz2[0m
+                  [36m</option>[39m
+                [36m</select>[39m
+              [36m</div>[39m
+              [36m<h2>[39m
+                [0mIs the earth flat?[0m
+              [36m</h2>[39m
+              [36m<div>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"choices"[39m
+                  [36m>[39m
+                    [0mChoices: [0m
+                  [36m</label>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mid[39m=[32m"choices"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"true"[39m
+                    [36m>[39m
+                      [0mtrue[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"false"[39m
+                    [36m>[39m
+                      [0mfalse[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mLock In Answer & Reveal[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mReturn to previous Question[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdvance to next Question[0m
+              [36m</button>[39m
+            [36m</div>[39m
           [36m</div>[39m
           [36m<div>[39m
             [36m<button[39m
@@ -75,41 +148,42 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
------------------------------|---------|----------|---------|---------|-------------------
-File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------------|---------|----------|---------|---------|-------------------
-All files                    |   97.58 |    95.19 |   97.82 |   97.48 |                   
- src                         |   98.63 |    95.45 |     100 |   98.59 |                   
-  App.tsx                    |     100 |      100 |     100 |     100 |                   
-  arrays.ts                  |     100 |      100 |     100 |     100 |                   
-  functions.ts               |     100 |      100 |     100 |     100 |                   
-  nested.ts                  |   96.66 |    89.65 |     100 |   96.42 | 240,271           
-  objects.ts                 |     100 |      100 |     100 |     100 |                   
- src/bad-components          |     100 |       50 |     100 |     100 |                   
-  ChooseTeam.tsx             |     100 |       50 |     100 |     100 | 26                
-  ColoredBox.tsx             |     100 |      100 |     100 |     100 |                   
-  DoubleHalf.tsx             |     100 |      100 |     100 |     100 |                   
-  ShoveBox.tsx               |     100 |      100 |     100 |     100 |                   
- src/components              |   92.68 |      100 |   92.59 |    92.3 |                   
-  ChangeType.tsx             |     100 |      100 |     100 |     100 |                   
-  Counter.tsx                |     100 |      100 |     100 |     100 |                   
-  CycleHoliday.tsx           |     100 |      100 |     100 |     100 |                   
-  RevealAnswer.tsx           |     100 |      100 |     100 |     100 |                   
-  StartAttempt.tsx           |     100 |      100 |     100 |     100 |                   
-  TwoDice.tsx                |   66.66 |      100 |   66.66 |   66.66 | 18-19,25          
- src/form-components         |     100 |      100 |     100 |     100 |                   
-  ChangeColor.tsx            |     100 |      100 |     100 |     100 |                   
-  CheckAnswer.tsx            |     100 |      100 |     100 |     100 |                   
-  EditMode.tsx               |     100 |      100 |     100 |     100 |                   
-  GiveAttempts.tsx           |     100 |      100 |     100 |     100 |                   
-  MultipleChoiceQuestion.tsx |     100 |      100 |     100 |     100 |                   
- src/interfaces              |       0 |        0 |       0 |       0 |                   
-  answer.ts                  |       0 |        0 |       0 |       0 |                   
-  question.ts                |       0 |        0 |       0 |       0 |                   
- src/quizzer                 |      75 |       50 |   66.66 |      75 |                   
-  HideTasks.tsx              |   66.66 |       50 |      50 |   66.66 | 70                
-  Quizzer.tsx                |     100 |      100 |     100 |     100 |                   
------------------------------|---------|----------|---------|---------|-------------------
+---------------------------------|---------|----------|---------|---------|---------------------
+File                             | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s   
+---------------------------------|---------|----------|---------|---------|---------------------
+All files                        |   92.59 |    88.59 |   92.61 |   92.33 |                     
+ src                             |   98.63 |    95.45 |     100 |   98.59 |                     
+  App.tsx                        |     100 |      100 |     100 |     100 |                     
+  arrays.ts                      |     100 |      100 |     100 |     100 |                     
+  functions.ts                   |     100 |      100 |     100 |     100 |                     
+  nested.ts                      |   96.66 |    89.65 |     100 |   96.42 | 240,271             
+  objects.ts                     |     100 |      100 |     100 |     100 |                     
+ src/bad-components              |     100 |       50 |     100 |     100 |                     
+  ChooseTeam.tsx                 |     100 |       50 |     100 |     100 | 26                  
+  ColoredBox.tsx                 |     100 |      100 |     100 |     100 |                     
+  DoubleHalf.tsx                 |     100 |      100 |     100 |     100 |                     
+  ShoveBox.tsx                   |     100 |      100 |     100 |     100 |                     
+ src/components                  |   92.68 |      100 |   92.59 |    92.3 |                     
+  ChangeType.tsx                 |     100 |      100 |     100 |     100 |                     
+  Counter.tsx                    |     100 |      100 |     100 |     100 |                     
+  CycleHoliday.tsx               |     100 |      100 |     100 |     100 |                     
+  RevealAnswer.tsx               |     100 |      100 |     100 |     100 |                     
+  StartAttempt.tsx               |     100 |      100 |     100 |     100 |                     
+  TwoDice.tsx                    |   66.66 |      100 |   66.66 |   66.66 | 18-19,25            
+ src/form-components             |     100 |      100 |     100 |     100 |                     
+  ChangeColor.tsx                |     100 |      100 |     100 |     100 |                     
+  CheckAnswer.tsx                |     100 |      100 |     100 |     100 |                     
+  EditMode.tsx                   |     100 |      100 |     100 |     100 |                     
+  GiveAttempts.tsx               |     100 |      100 |     100 |     100 |                     
+  MultipleChoiceQuestion.tsx     |     100 |      100 |     100 |     100 |                     
+ src/interfaces                  |       0 |        0 |       0 |       0 |                     
+  answer.ts                      |       0 |        0 |       0 |       0 |                     
+  question.ts                    |       0 |        0 |       0 |       0 |                     
+ src/quizzer                     |    42.3 |       25 |   35.71 |    42.3 |                     
+  HideTasks.tsx                  |   66.66 |       50 |      50 |   66.66 | 68                  
+  QuizMultipleChoiceQuestion.tsx |      75 |    33.33 |   66.66 |      75 | 19                  
+  Quizzer.tsx                    |   31.57 |        0 |   22.22 |   31.57 | 74-75,80-92,151-157 
+---------------------------------|---------|----------|---------|---------|---------------------
 Summary of all failing tests
 FAIL src/App.test.tsx
   ● renders the course name somewhere
@@ -121,18 +195,91 @@ FAIL src/App.test.tsx
       [36m<div>[39m
         [36m<div>[39m
           [36m<div>[39m
-            [36m<h3>[39m
-              [0mQuizzer[0m
-            [36m</h3>[39m
             [36m<div>[39m
-              [36m<span>[39m
-                [0mSub-Task 1, sketch[0m
-              [36m</span>[39m
+              [36m<h3>[39m
+                [0mQuizzer[0m
+              [36m</h3>[39m
+              [36m<div>[39m
+                [36m<span>[39m
+                  [0mSub-Task 1, sketch[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<img[39m
+                [33malt[39m=[32m"A sketch of the Quizzer application"[39m
+                [33msrc[39m=[32m"sketch-compressed.png"[39m
+              [36m/>[39m
             [36m</div>[39m
-            [36m<img[39m
-              [33malt[39m=[32m"A sketch of the Quizzer application"[39m
-              [33msrc[39m=[32m"sketch-compressed.png"[39m
-            [36m/>[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mfor[39m=[32m"quizList"[39m
+                [36m>[39m
+                  [0mQuizzes: [0m
+                [36m</label>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"form-select"[39m
+                  [33mid[39m=[32m"quizList"[39m
+                [36m>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"0"[39m
+                  [36m>[39m
+                    [0mQuiz1[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"1"[39m
+                  [36m>[39m
+                    [0mQuiz2[0m
+                  [36m</option>[39m
+                [36m</select>[39m
+              [36m</div>[39m
+              [36m<h2>[39m
+                [0mIs the earth flat?[0m
+              [36m</h2>[39m
+              [36m<div>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"choices"[39m
+                  [36m>[39m
+                    [0mChoices: [0m
+                  [36m</label>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mid[39m=[32m"choices"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"true"[39m
+                    [36m>[39m
+                      [0mtrue[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"false"[39m
+                    [36m>[39m
+                      [0mfalse[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mLock In Answer & Reveal[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mReturn to previous Question[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdvance to next Question[0m
+              [36m</button>[39m
+            [36m</div>[39m
           [36m</div>[39m
           [36m<div>[39m
             [36m<button[39m
@@ -168,5 +315,5 @@ FAIL src/App.test.tsx
 Test Suites: 1 failed, 20 passed, 21 total
 Tests:       1 failed, 134 passed, 135 total
 Snapshots:   0 total
-Time:        16.433 s
+Time:        11.388 s
 Ran all test suites.
