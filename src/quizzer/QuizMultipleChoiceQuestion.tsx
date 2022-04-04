@@ -22,7 +22,11 @@ export function QuizMultipleChoiceQuestion({
         <div>
             <Form.Group controlId="choices">
                 <Form.Label>Choices: </Form.Label>
-                <Form.Select value={answer} onChange={updateAnswer}>
+                <Form.Select
+                    value={answer}
+                    onChange={updateAnswer}
+                    data-testid="answer_selection"
+                >
                     {options.map((option: string) => (
                         <option key={option} value={option}>
                             {option}
